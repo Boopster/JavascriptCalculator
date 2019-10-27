@@ -21,9 +21,14 @@ describe('calculator functionality', function() {
     element(by.css('#number2')).click();
     expect(running_total.getAttribute('value')).to.eventually.equal('22');
   });
-  //
-  // it('should update the display with the result of the operation', function(){
-  // });
+
+  it('should update the display with the result of the operation', function(){
+    element(by.css('#number2')).click();
+    element(by.css('#operator_add')).click();
+    element(by.css('#number2')).click();
+    element(by.css('#operator_equals')).click();
+    expect(running_total.getAttribute('value')).to.eventually.equal('4');
+  });
   //
   // it('should display the expected output for a range of numbers', function(){
   // });
