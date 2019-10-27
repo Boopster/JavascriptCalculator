@@ -46,13 +46,16 @@ describe('calculator', function () {
     assert.equal(calculator.runningTotal,2);
   });
 
-  // it('it can clear the running total without affecting the calculation', function() {
-  //   calculator.runningTotal = 3;
-  //   calculator.numberClick(2);
-  //   calculator.multiply(5);
-  //   calculator.operatorClick('=');
-  //   // assert.equal(calculator.previousTotal,15);
-  //   assert.equal(calculator.runningTotal,0);
-  // });
+  it('it can clear the running total without affecting the calculation', function() {
+    calculator.numberClick(2);
+    calculator.operatorClick('+');
+    calculator.numberClick(2);
+    calculator.operatorClick('+');
+    calculator.numberClick(3);
+    calculator.clearClick();
+    calculator.numberClick(6);
+    calculator.operatorClick('=');
+    assert.equal(calculator.runningTotal,10);
+  });
 
 });
