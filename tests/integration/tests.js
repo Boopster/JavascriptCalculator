@@ -14,6 +14,23 @@ describe('calculator functionality', function() {
     running_total = element(by.css('#running_total'))
     element(by.css('#number2')).click();
     expect(running_total.getAttribute('value')).to.eventually.equal('2')
-  })
+  });
+
+  // it('should update the display of the running total', function(){
+  // });
+  //
+  // it('should update the display with the result of the operation', function(){
+  // });
+  //
+  // it('should display the expected output for a range of numbers', function(){
+  // });
+  //
+  // it('should display 0 when a number is divided by 0', function(){
+  // });
 
 });
+// 1. Do the number buttons update the display of the running total?
+// 2. Do the arithmetical operations update the display with the result of the operation?
+// 3. Can multiple operations be chained together?
+// 4. Is the output as expected for a range of numbers (for example, positive, negative, decimals and very large numbers)?
+// 5. What does the code do in exceptional circumstances? Specifically, if you divide by zero, what is the effect? Write a test to describe what you'd prefer to happen, and then correct the code to make that test pass (you will need to modify the Calculator model to meet this requirement).
