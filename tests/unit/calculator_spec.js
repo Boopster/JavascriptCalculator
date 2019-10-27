@@ -34,6 +34,16 @@ describe('calculator', function () {
     calculator.previousTotal = 21;
     calculator.divide(7);
     assert.equal(calculator.runningTotal,3);
-  })
+  });
+
+  it('it can concatenate multiple number button clicks', function(){
+    calculator.numberClick(2);
+    calculator.numberClick(2);
+    assert.equal(calculator.runningTotal,22);
+  });
+
+  it('it can clear the running total without affecting the calculation', function() {
+
+  });
 
 });
