@@ -38,9 +38,14 @@ describe('calculator functionality', function() {
     expect(running_total.getAttribute('value')).to.eventually.equal('4');
   });
 
-  // it('should display the expected output for a range of numbers__negative numbers', function(){
-  // });
-  //
+  it('should display the expected output for a range of numbers__negative numbers', function(){
+    element(by.css('#number2')).click();
+    element(by.css('#operator_subtract')).click();
+    element(by.css('#number8')).click();
+    element(by.css('#operator_equals')).click();
+    expect(running_total.getAttribute('value')).to.eventually.equal('-6');
+  });
+
   // it('should display the expected output for a range of numbers__decimal numbers', function(){
   // });
   //
