@@ -47,6 +47,13 @@ describe('calculator functionality', function() {
   });
 
   // it('should display the expected output for a range of numbers__decimal numbers', function(){
+  //   element(by.css('#number2')).click();
+  //   element(by.css('#number_decimal')).click();
+  //   element(by.css('#number8')).click();
+  //   element(by.css('#operator_subtract')).click();
+  //   element(by.css('#number1')).click();
+  //   element(by.css('#operator_equals')).click();
+  //   expect(running_total.getAttribute('value')).to.eventually.equal('1.8');
   // });
   //
   // it('should display the expected output for a range of numbers__large numbers', function(){
